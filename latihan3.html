@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+</head>
+<body>
+    <h3>Soal 8</h3>
+    <script type="text/javascript">
+        var x = 3;
+        var y = 5;
+        var z=0;
+        for(var z=1;z<=30;z++){
+            if (z%x==0 && z%y==0) {
+                document.write(z + " adalah kelipatan " + x + " dan " + y + "<br/>");
+            }
+            else if (z%x==0) {
+                document.write(z + " adalah kelipatan " + x + "<br/>");
+            }
+            else if (z%y==0) {
+                document.write(z + " adalah kelipatan " + y + "<br/>");
+            }
+            else {
+                document.write(z + " bukanlah kelipatan " + x + " maupun " + y + "<br/>");
+            }
+        }
+    </script>
+    <h3>Soal 9</h3>
+    <script type="text/javascript">
+        var jam = ["Rolex","Casio","Swiss Army","DW","Hublot"];
+        var total="";
+        for (var i=0;i<jam.length;i++) {
+            if(i<jam.length-1) {
+                total += " " + jam[i] + ",";
+            }
+            else {
+                total += " " + jam[i] + ".";
+            }
+        }
+        document.write("Saya suka jam " + total);
+    </script>
+    <h3>Soal 10</h3>
+    <script type="text/javascript">
+        var menu = ["Nasi Goreng","Nasi Uduk","Nasi Kuning","Nasi Lemak","Nasi Padang"];
+        var harga = ["Rp. 10.000,-","Rp. 15.000,-","Rp. 20.000,-","Rp. 25.000,-","Rp. 30.000,-",];
+        var total="";
+        document.write("<ul>");
+        for (var i=0;i<menu.length;i++) {
+                total += "<li>" + menu[i] + " harga " + harga[i] + ".</li>";
+        }
+        document.write("</ul>");
+        document.write(total);
+    </script>
+</body>
+</html>
